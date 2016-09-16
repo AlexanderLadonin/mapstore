@@ -11,7 +11,6 @@ abstract class Security extends \vendor\Module
     protected $controller;
     protected $action;
     protected $db_model;
-    // мы можем с помощью них по необходимости сменить view
     protected $layout_file = null;
     protected $view_file = null;
     protected $layout_name = null;
