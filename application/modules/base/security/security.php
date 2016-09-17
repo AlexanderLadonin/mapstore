@@ -1,6 +1,6 @@
 <?php
 /*
- * Class Security
+ * Class modules\base\Security\Security
  *
  * Основной класс по работе с платформой
  */

@@ -1,6 +1,6 @@
 <?php
 /*
- * Class Security
+ * Class modules\base\Security\classes\Security
  */
 namespace modules\base\Security\classes;
 

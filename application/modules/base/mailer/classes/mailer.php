@@ -1,6 +1,6 @@
 <?php
 /*
- * Class modules\base\mailer\Mailer
+ * Class modules\base\mailer\classes\Mailer
  */
 namespace modules\base\mailer\classes;
 use \components\app as components;

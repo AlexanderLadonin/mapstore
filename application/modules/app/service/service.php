@@ -1,6 +1,6 @@
 <?php
 /*
- * Class modules\app\service\classes\Service
+ * Class modules\app\service\Service
  *
  * Отвечает за создание сайтов на базе текущей платформы
  * Хранит настройки каждого сайта
