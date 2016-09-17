@@ -8,11 +8,16 @@ use \components\app as components;
 
 abstract class Model extends \vendor\Form
 {
-
+    /*
+     * Name формы
+     */
     const FORM_NAME = 'add_new_point_form';
 
-    //const IDENT = 'add_New_Point';
-
+    /*
+     * Общие параметры формы
+     *
+     * @var array
+     */
     protected $form_params = array(
         'js_before' => array(),
         'js_after' => array(),
@@ -25,14 +30,25 @@ abstract class Model extends \vendor\Form
         ),
     );
 
-    // При клике по какому блоку с id будет субмит
+    /*
+     * При клике по какому блоку с id будет субмит
+     *
+     * @var string
+     */
     protected $submit_bind_id = 'placemark_add_commit';
 
+    /*
+     * Поля формы
+     *
+     * @var array
+     */
     protected $fields = array(
         // hidden поле редиректа
         MY_FORM_SUBMIT_REDIRECT_URL_VAR_NAME => array(MY_FORM_SUBMIT_REDIRECT_URL_VALUE_SELF),
         'x' => array(
+            // Тип поля
             'kind' => 'input',
+            // Параметры поля
             'entity' => array(
                 'type' => 'hidden',
                 'required' => true,
@@ -114,23 +130,11 @@ abstract class Model extends \vendor\Form
 
     protected function __construct()
     {
+        // Задаем options для поля 'category'
         $this->fields['category']['entity']['options'] = self::get_module(MY_MODULE_NAME_SERVICE)->get_categories_add_new_point_form_options();
 
         if (self::get_module(MY_MODULE_NAME_SERVICE)->is_need_photos_for_placemarks() === false) {
             $this->fields['photos']['entity']['required'] = false;
         }
     }
-    /*
-      protected $button = array(
-      'kind' => 'div',
-      'entity' => array(
-      'js' => array(
-      'onClick' => '%form_object%.submit()',
-      ),
-      'class' => '',
-      'value' => 'form/map_new_point/_button/value'
-      ),
-
-      );
-     */
 }

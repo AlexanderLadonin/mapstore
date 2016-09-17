@@ -8,7 +8,15 @@ namespace modules\base\archive\modules\zip\classes;
 class Zip extends \ZipArchive
 {
 
-    function ToZip($source, $destination)
+    /*
+     * Zip архивация файла/папки
+     *
+     * @param string $source - что архивируем
+     * @param string $destination - куда архивируем
+     *
+     * @return boolean - результат архивации
+     */
+    function archive($source, $destination)
     {
         if (!extension_loaded('zip') || !file_exists($source)) {
             return false;

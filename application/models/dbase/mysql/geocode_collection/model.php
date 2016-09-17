@@ -19,8 +19,14 @@ abstract class Model extends \vendor\DBase_Mysql
         return $this->table_name;
     }
 
+    /*
+     * Поля таблицы
+     *
+     * @var array
+     */
     protected $fields = array(
         'map_data_id' => array(
+            // Правила валидации значений поля
             'rules' => array('numeric', 'required'),
         ),
         'language' => array(
@@ -28,7 +34,9 @@ abstract class Model extends \vendor\DBase_Mysql
         ),
         'country_code' => array(
             'rules' => array(), //теперь required не нужен, раз есть  default_value
+            // Дефолтное значение поля
             'default_value' => MY_UNDEFINED_VALUE, // если сюда передается пустое значение, то оно будет заменено на это
+            // Текущее значение поля
             'value' => MY_UNDEFINED_VALUE, // если это поле вообще не передалось с данными извне, то поле будет иметь такое значение
         ),
         'state_code' => array(
@@ -139,8 +147,8 @@ abstract class Model extends \vendor\DBase_Mysql
     /*
      * Добавляем записи одной метки на всех доступных языках
      *
-     * @param integer $data_id - id метки
      * @param array $coords - координаты метки
+     * @param integer $data_id - id метки
      *
      * @return array - добавленные данные
      */

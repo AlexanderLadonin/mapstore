@@ -13,22 +13,40 @@ final class Language extends Component
 
     use \vendor\traits\patterns\t_singleton;
 
-    // Язык по умолчанию
+    /*
+     *  Язык по умолчанию
+     */
     const DEFAULT_LANGUAGE = MY_LANGUAGE_EN;
 
-    // Язык приложения
+    /*
+     *  Язык приложения
+     *
+     * @var string
+     */
     protected static $language;
 
-    // Доступные в приложении языки
+    /*
+     * Доступные в приложении языки
+     *
+     * @var array
+     */
     protected static $available_languages = array(
         MY_LANGUAGE_RU,
         MY_LANGUAGE_EN
     );
 
-    // Базовый текст
+    /*
+     * Базовый словарь
+     *
+     * @var array
+     */
     protected $base_words = array();
 
-    // Текст сервиса
+    /*
+     * Словарь сервиса
+     *
+     * @var array
+     */
     protected $service_words = array();
 
     protected function __construct()
@@ -129,6 +147,8 @@ final class Language extends Component
 
     /*
      * Получить язык приложения
+     *
+     * @return string
      */
     public function get_language()
     {

@@ -6,14 +6,60 @@ namespace modules\base\Security\classes;
 
 abstract class Security extends \vendor\Module
 {
-
+    /*
+     * GET переменные
+     *
+     * @var array
+     */
     protected $get_vars = array();
+
+    /*
+     * Название контроллера
+     *
+     * @var string
+     */
     protected $controller;
+
+    /*
+     * Название action контроллера
+     *
+     * @var string
+     */
     protected $action;
+
+    /*
+     * Модель подключения к БД
+     *
+     * @var resource
+     */
     protected $db_model;
+
+    /*
+     * Путь к layout файлу
+     *
+     * @var string
+     */
     protected $layout_file = null;
+
+    /*
+     * Путь к view файлу
+     *
+     * @var string
+     */
     protected $view_file = null;
+
+    /*
+     * Название layout файла
+     *
+     * @var string
+     */
     protected $layout_name = null;
+
+    /*
+     * Название view файла
+     *
+     * @var string
+     */
     protected $view_name = null;
 
     /*
@@ -105,7 +151,11 @@ abstract class Security extends \vendor\Module
      */
     protected function get_view_name()
     {
-        return $this->view_name ? $this->view_name : $this->get_action();
+        if (is_null($this->view_name)) {
+            $this->view_name = $this->get_action();
+        }
+
+        return $this->view_name;
     }
 
     /*
@@ -127,7 +177,11 @@ abstract class Security extends \vendor\Module
     protected function get_layout_name()
     {
         $config = self::get_config();
-        return $this->layout_name ? $this->layout_name : my_pass_through(@$config['layouts'][strtolower($this->get_controller())][$this->get_action()]);
+        if (is_null($this->layout_name)) {
+            $this->layout_name = my_pass_through(@$config['layouts'][strtolower($this->get_controller())][$this->get_action()]);
+        }
+
+        return $this->layout_name;
     }
 
     /*
@@ -315,8 +369,10 @@ abstract class Security extends \vendor\Module
 
     /*
      * Старт приложения
+     *
+     * @param array $conf - общая конфигурация приложения
      */
-    public function run($conf)
+    public function run(array $conf)
     {
 
         if (my_array_is_not_empty(@$conf)) {
@@ -325,13 +381,13 @@ abstract class Security extends \vendor\Module
             exit('Config not found.');
         }
         $config = self::get_config();
-        $this->db_model = $this->get_db_type();
+        $this->db_model = $this->get_db();
         $db_connect = $this->db_model->get_connect();
         try {
 
             $db_connect->beginTransaction();
 
-            $this->execute($conf);
+            $this->execute();
 
             $db_connect->commit();
 
@@ -382,7 +438,7 @@ abstract class Security extends \vendor\Module
     /*
      * Запуск основных команд для построения страницы
      */
-    private function execute(array $conf)
+    private function execute()
     {
 
         $this->check_config_paths();
@@ -403,7 +459,7 @@ abstract class Security extends \vendor\Module
      *
      * @return string
      */
-    private function get_db_type()
+    private function get_db()
     {
         $config = self::get_config();
         if (my_array_is_not_empty(@$config['db'])) {

@@ -10,6 +10,11 @@ abstract class Controller extends Component {
 
     use \vendor\traits\patterns\t_singleton;
 
+    /*
+     * Результат выполнения контроллера
+     * 
+     * @var array
+     */
     protected $data = array();
 
     protected function flush_data() {

@@ -1,7 +1,7 @@
 <?php
 /*
  * Class vendor\Component
- * 
+ *
  * Базовый класс, от которого должны наследоваться все остальные классы
  */
 namespace vendor;
@@ -12,42 +12,58 @@ abstract class Component
 {
 
     /*
-     * Тип устройства - мобильное, декстопное
+     * Тип устройства - мобильное или декстопное
+     *
+     * @var string
      */
     static private $device_type = null;
 
     /*
      * Имя директории устройства
+     *
+     * @var string
      */
     static private $device_dir = null;
 
     /*
-     * Массив основной конфигурации
+     * Массив общей конфигурации
+     *
+     * @var array
      */
     static private $config = null;
 
     /*
      * Текущий url
+     *
+     * @var string
      */
     static private $self_url = null;
 
     /*
      * Query string текущего url
+     *
+     * @var string
      */
     static private $query_string = null;
 
     /*
      * Основные GET переменные текущего url без query string
+     *
+     * @var string
      */
     static private $self_url_without_query_string = null;
 
     /*
      * Массив ошибок, возниающих в процессе выполнения
+     *
+     * @var array
      */
     static protected $errors = array();
 
     /*
      * Если установлено, то редирект на этот url после выполнения всех действий
+     *
+     * @var string
      */
     static private $redirect_url = null;
 
@@ -624,7 +640,7 @@ abstract class Component
             }
         } else if (($rule === 'required') || ($rule === 'not_empty')) {//хоть что-нибудь
             // 'not_empty' - аналог required, но с условием, что параметр не обязательно должен передаваться - то есть: если найден, то не должен быть пустым
-            // !!!!!!!!!!!'required' - для моделей, 'not_empty'- для всего остального!!!!!!!!!!!
+            // 'required' - для моделей, 'not_empty'- для всего остального
             // оба несут разный информационный смысл
             if (empty($value)) {
 

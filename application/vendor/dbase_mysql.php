@@ -12,21 +12,29 @@ class DBase_Mysql extends Model
 {
     /*
      * Соединение с БД
+     *
+     * @var resource
      */
     static protected $connect;
 
     /*
      * Первоначальные данные настроек полей таблицы
+     *
+     * @var array
      */
     protected $fields_primary_data = array();
 
     /*
      * Текущие данные настроек полей таблицы
+     *
+     * @var array
      */
     protected $fields = array();
 
     /*
      * Имя таблицы
+     *
+     * @var string
      */
     protected $table_name;
 

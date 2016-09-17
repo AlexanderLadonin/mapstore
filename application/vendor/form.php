@@ -12,26 +12,25 @@ abstract class Form extends Model
 {
     /*
      * Статус, что hidden поля уже отображены
+     *
+     * @var boolean
      */
     protected $hidden_fields_is_shown = false;
 
-
     /*
      * Параметры формы
+     *
+     * @var array
      */
     protected $form_params = array();
 
-
-
-
-
-
     /*
-     * Получение массива всех полей
+     * Вернуть массив всех полей
+     *
+     * @return array
      */
     public function get_all_fields()
     {
-
         return $this->fields;
     }
 
@@ -577,27 +576,4 @@ abstract class Form extends Model
             return false;
         }
     }
-
-
-    /*
-      //принимаем даные из POST запроса
-      public function enter_fields($post = null) {
-
-      if ((my_is_empty(@$post)) && (my_is_not_empty(@$_POST[static::FORM_NAME]))) {
-
-      $post = $_POST[static::FORM_NAME];
-      }
-
-      $post = $post ? $post : array();
-
-      foreach ($post as $name => $value) {
-
-      if (array_key_exists($name, $this->fields)) {
-      $this->fields[$name]['value'] = htmlspecialchars($value);
-      }
-      }
-
-      return $this;
-      }
-     */
 }

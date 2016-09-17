@@ -10,7 +10,9 @@ use \modules\base\mailer\classes;
 
 final class Mailer extends classes\Mailer
 {
-
+    /*
+     * Объект PHPMailer
+     */
     protected $mailer;
 
     protected function __construct()

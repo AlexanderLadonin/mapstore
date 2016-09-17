@@ -6,8 +6,25 @@ namespace modules\app\service\classes;
 
 abstract class Service extends \vendor\Module
 {
+    /*
+     * Конфигурация сервиса
+     *
+     * @var array
+     */
     protected $config = array();
+
+    /*
+     * Словарь сервиса
+     *
+     * @var array
+     */
     protected $words = array();
+
+    /*
+     * Путь до сервиса
+     *
+     * @var string
+     */
     protected $path = '';
 
     protected function __construct()
@@ -16,11 +33,21 @@ abstract class Service extends \vendor\Module
         $this->config = require_once($this->path . 'config' . MY_DS . 'config.php');
     }
 
+    /*
+     * Вернуть имя сайта
+     *
+     * @return string
+     */
     public function get_site_name()
     {
         return '';
     }
 
+    /*
+     * Вернуть путь до блоков сервиса
+     *
+     * @return string
+     */
     public function get_blocks_path()
     {
         return '';

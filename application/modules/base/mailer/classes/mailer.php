@@ -7,7 +7,18 @@ use \components\app as components;
 
 abstract class Mailer extends \vendor\Module
 {
+    /*
+     * Email info отправителя
+     *
+     * @var string
+     */
     protected $info_email;
+
+    /*
+     * Имя info отправителя
+     *
+     * @var string
+     */
     protected $info_name;
 
     protected function __construct(){

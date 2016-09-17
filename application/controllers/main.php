@@ -9,6 +9,11 @@ namespace controllers;
 final class Main extends \vendor\controller
 {
 
+    /*
+     * Action index
+     *
+     * @return array - данные для view
+     */
     public function action_index()
     {
         // Подготавливаем данные для отображения в view

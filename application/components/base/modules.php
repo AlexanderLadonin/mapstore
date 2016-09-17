@@ -13,7 +13,7 @@ final class Modules extends Component
 {
 
     /*
-     * Возвращает экземпляр модуля по его имени
+     * Возвратить экземпляр модуля по его имени
      *
      * @param string $name - имя модуля
      *
