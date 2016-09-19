@@ -1,4 +1,9 @@
 <?php
+/*
+ * Словарь сервиса (сайта) на английском
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
+ */
 return array(
     'errors/new_point/photos_upload' => 'Please attach at least one photo.',
     'errors/new_point/photos_uploaded_yet' => 'Photos are still being downloaded.',

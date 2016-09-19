@@ -1,5 +1,11 @@
 <?php
 /*
+ * Пользовательские функции
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
+ */
+
+/*
  * Обрезание текста с сохраненим целостности слов
  *
  * @param string $text - обрезаемый текст

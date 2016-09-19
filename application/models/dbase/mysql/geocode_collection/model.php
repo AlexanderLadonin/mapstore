@@ -1,6 +1,8 @@
 <?php
 /*
  * Db модель geocode_collection
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace models\dbase\mysql\geocode_collection;
 

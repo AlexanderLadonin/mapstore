@@ -3,6 +3,8 @@
  * Class controllers\Main
  *
  * Контроллер главной страницы
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace controllers;
 

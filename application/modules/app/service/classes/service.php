@@ -1,6 +1,8 @@
 <?php
 /*
  * Class modules\app\service\classes\Service
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace modules\app\service\classes;
 

@@ -1,6 +1,8 @@
 <?php
 /*
  * Class modules\base\mailer\classes\Mailer
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace modules\base\mailer\classes;
 use \components\app as components;

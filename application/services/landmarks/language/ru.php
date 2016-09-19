@@ -1,4 +1,7 @@
 <?php
+/*
+ * Словарь на русском
+ */
 return array(
     'form/map_new_point/category/'.MY_NONE_CATEGORY_CODE => 'Выберите из списка',
     'form/map_new_point/category/0' => 'Прочие места',

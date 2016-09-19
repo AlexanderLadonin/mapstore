@@ -1,10 +1,3 @@
-<?php
-// Для сервисов, возможность отключать страницы
-// Не делаем в модуле security, потому что это не относится к фреймворку
-if(is_available_to_run_view()===false){
-  exit();
-}
-?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>

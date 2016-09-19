@@ -1,6 +1,8 @@
 <?php
 /*
  * Class modules\base\archive\classes\Archive
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace modules\base\archive\classes;
 

@@ -1,6 +1,8 @@
 <?php
 /*
  * Class modules\app\seo\classes\Seo
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace modules\app\seo\classes;
 

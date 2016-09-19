@@ -3,6 +3,8 @@
  * Class vendor\Model
  *
  * Базовый класс всех моделей
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace vendor;
 

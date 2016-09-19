@@ -3,6 +3,8 @@
  * Class modules\base\archive\modules\zip\Zip
  *
  * Отвечает за zip-архивацию
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace modules\base\archive\modules\zip;
 

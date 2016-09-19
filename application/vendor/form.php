@@ -3,6 +3,8 @@
  * Class vendor\Form
  *
  * Базовый класс моделей формы
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace vendor;
 

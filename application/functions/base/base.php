@@ -1,4 +1,10 @@
 <?php
+/*
+ * Базовые функции
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
+ */
+
 if ($config['debug'] === 1) {
 
     $autoload_history = "<b>Автозагрузка классов:</b> <br>";

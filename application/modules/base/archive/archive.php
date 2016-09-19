@@ -3,6 +3,8 @@
  * Class modules\base\archive\Archive
  *
  * Отвечает за архивацию файлов и каталогов
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace modules\base\archive;
 

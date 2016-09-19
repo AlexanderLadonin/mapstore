@@ -1,6 +1,8 @@
 <?php
 /*
  * Внутренние настройки сервиса
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 return array(
     'generic' => array(

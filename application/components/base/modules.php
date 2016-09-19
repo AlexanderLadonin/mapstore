@@ -3,6 +3,8 @@
  * Класс Modules
  *
  * Отвечает за работу с имеющимися модулями в проекте
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 
 namespace components\base;

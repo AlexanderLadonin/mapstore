@@ -1,6 +1,8 @@
 <?php
 /*
  * Настройки подключения в базе данных MySQL
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 return array(
     'mysql' => array(

@@ -1,6 +1,8 @@
 <?php
 /*
  * Class models\forms\add_new_point\Model
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace models\forms\add_new_point;
 

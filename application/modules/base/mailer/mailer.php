@@ -3,6 +3,8 @@
  * Class modules\base\mailer\Mailer
  *
  * Отвечает за отправку почты
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace modules\base\mailer;
 

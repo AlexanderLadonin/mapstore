@@ -6,6 +6,8 @@
  * @param string $srcdir - копируемый путь папки
  * @param string $dstdir - путь куда копируем
  * @param boolean $verbose - отображение хода событий
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 function dircopy($srcdir, $dstdir, $verbose = false)
 {

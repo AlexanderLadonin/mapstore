@@ -3,6 +3,8 @@
  * Class modules\app\seo\Seo
  *
  * Отвечает за SEO данные сайта
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace modules\app\seo;
 

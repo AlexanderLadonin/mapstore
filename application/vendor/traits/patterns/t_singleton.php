@@ -1,8 +1,10 @@
 <?php
 /*
  * Trait vendor\traits\patterns\T_Singleton
- * 
+ *
  * Добавляется к классу, когда необходимо реализовать паттерн Singleton
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace vendor\traits\patterns;
 

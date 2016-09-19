@@ -3,6 +3,8 @@
  * Class models\forms\Add_New_Point
  *
  * Представляет форму добавления новой метки на карту
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace models\forms;
 

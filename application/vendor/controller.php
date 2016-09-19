@@ -3,6 +3,8 @@
  * Class vendor\Controller
  *
  * Базовый класс контроллера
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace vendor;
 
@@ -12,7 +14,7 @@ abstract class Controller extends Component {
 
     /*
      * Результат выполнения контроллера
-     * 
+     *
      * @var array
      */
     protected $data = array();

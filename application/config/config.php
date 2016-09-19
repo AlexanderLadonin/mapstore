@@ -1,6 +1,8 @@
 <?php
 /*
  * Общий конфигурационный файл
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 return array(
 

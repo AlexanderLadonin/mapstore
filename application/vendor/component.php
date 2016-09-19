@@ -3,6 +3,8 @@
  * Class vendor\Component
  *
  * Базовый класс, от которого должны наследоваться все остальные классы
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace vendor;
 

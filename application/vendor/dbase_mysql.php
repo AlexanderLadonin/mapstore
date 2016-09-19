@@ -3,6 +3,8 @@
  * Class vendor\DBase_Mysql
  *
  * Базовый класс моделей db mysql
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace vendor;
 

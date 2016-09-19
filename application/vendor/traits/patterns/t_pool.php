@@ -2,7 +2,9 @@
 /*
  * Trait vendor\traits\patterns\T_Pool
  *
- * Добавляется к классу, когда необходимо реализовать паттерн Pool
+ * Добавляется к классу, когда необходимо реализовать паттерн Pool Objects
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace vendor\traits\patterns;
 

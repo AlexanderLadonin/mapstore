@@ -4,6 +4,8 @@
  *
  * Отвечает за создание сайтов на базе текущей платформы
  * Хранит настройки каждого сайта
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace modules\app\service;
 

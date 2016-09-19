@@ -1,6 +1,8 @@
 <?php
 /*
  * Блок breadcrumbs
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace app\views\generic\blocks\breadcrumbs;
 

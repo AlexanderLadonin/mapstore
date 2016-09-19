@@ -1,4 +1,13 @@
 <?php
+/*
+ * Системные и пользовательские константы
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
+ */
+
+/*
+ *  Системные
+ */
 define('MY_ERROR_WRONG_ADRESS', 1);
 define('MY_ERROR_DB_NO_CONNECT', 2);
 define('MY_ERROR_USER_NOT_VERIFICATED', 3);
@@ -37,7 +46,6 @@ define('MY_ERROR_UNRESOLVED_ACCESS', 38);
 define('MY_MODULE_NAME_SECURITY', 'security');
 define('MY_MODULE_NAME_SERVICE', 'service');
 define('MY_COOKIE_NAME_SITE_LANGUAGE', 'site_language');
-define('MY_CONTROLLER_NAME_MAIN', 'main');
 define('MY_ACTION_NAME_INDEX', 'index');
 
 define('MY_GET_VARS_QUERY_STRING_NAME', 'query_string');
@@ -60,10 +68,17 @@ define('MY_DIR_DESCTOP_NAME', 'desctop');
 define('MY_DIR_MOBILE_NAME', 'mobile');
 
 define('MY_SUCCESS_CODE', 'success');
-define('MY_NONE_CATEGORY_CODE', 'none');
+
 define('MY_FILTER_TYPE_ALL', 'all');
 define('MY_FILTER_TYPE_ONLY_REQUIRED', 'only_required');
 define('MY_FILTER_TYPE_WITHOUT_REQUIRED', 'without_required');
 
 define('MY_LANGUAGE_RU', 'ru');
 define('MY_LANGUAGE_EN', 'en');
+
+
+/*
+ *  Пользовательские
+ */
+define('MY_NONE_CATEGORY_CODE', 'none');
+define('MY_CONTROLLER_NAME_MAIN', 'main');

@@ -3,6 +3,8 @@
  * Class components\app\User
  *
  * Отвечает за работу с пользователем
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace components\app;
 

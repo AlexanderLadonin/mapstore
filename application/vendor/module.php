@@ -3,6 +3,8 @@
  * Class vendor\Module
  *
  * Базовый класс модулей
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace vendor;
 

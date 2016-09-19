@@ -3,6 +3,8 @@
  * Class components\app\Language
  *
  * Отвечает за язык отображаемого текста в приложении
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace components\app;
 

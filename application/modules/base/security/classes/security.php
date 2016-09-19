@@ -1,6 +1,8 @@
 <?php
 /*
  * Class modules\base\Security\classes\Security
+ *
+ * @author Alexander Ladonin <ladonin85@mail.ru>
  */
 namespace modules\base\Security\classes;
 
