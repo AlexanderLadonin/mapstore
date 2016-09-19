@@ -27,7 +27,7 @@ img - frontend images (pictures, icons etc.) directory
 javascript - javascript files directory
 log - log data directory
 migration_queries - migration queries directory
-shell - console scripts directory
+shell - console files directory
 
 
 EXAMPLES:
