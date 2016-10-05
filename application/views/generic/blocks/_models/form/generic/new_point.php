@@ -1,13 +1,11 @@
 <?php
 /*
  * Сгенерированная анонимная функция для работы с формой добавления/удаления/редактирования меток
- *
  */
-
-$config = self::get_config();
-
+namespace \views\generic\blocks\_models\form\generic;
 use \components\app as components;
 
+$config = self::get_config();
 $form_model = components\Map::get_form_model('new_point');
 ?>
 <script type="text/javascript">
