@@ -4,7 +4,7 @@ MAPSTORE - is a geolocation sites constructor.
 
 
 FEATURES:
-1. Hight speed processing.
+1. High speed processing.
 2. Mobile and desctop versions available.
 3. Extensibility by adding new modules.
 4. Several sites can be serviced by one constructor.
