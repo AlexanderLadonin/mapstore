@@ -2,7 +2,7 @@
 /*
  * Сгенерированная анонимная функция для работы с формой добавления/удаления/редактирования меток
  */
-namespace \views\generic\blocks\_models\form\generic;
+namespace views\generic\blocks\_models\form\generic;
 use \components\app as components;
 
 $config = self::get_config();
