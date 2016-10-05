@@ -2,23 +2,22 @@
 /*
  * Сгенерированная анонимная функция для работы с формой добавления/удаления/редактирования меток
  */
-namespace views\generic\blocks\_models\form\generic;
 use \components\app as components;
 
 $config = self::get_config();
-$form_model = components\Map::get_form_model('new_point');
+$form_new_point_model = components\Map::get_form_model('new_point');
 ?>
 <script type="text/javascript">
     $(document).ready(function () {
-        my_<?php echo($form_model::FORM_NAME); ?>_object = (function () {
+        my_<?php echo($form_new_point_model::FORM_NAME); ?>_object = (function () {
 
             // Данные формы
-            var form_name = '<?php echo(my_pass_through(@$form_model::model()->get_id())); ?>';
-            var form_id = '<?php echo(my_pass_through(@$form_model::model()->get_id())); ?>';
+            var form_name = '<?php echo(my_pass_through(@$form_new_point_model::model()->get_id())); ?>';
+            var form_id = '<?php echo(my_pass_through(@$form_new_point_model::model()->get_id())); ?>';
             var form = $('#' + form_id);
-            var photos_input = $('#<?php echo(my_pass_through(@$form_model::model()->get_id('photos'))); ?>');
-            var x_input = $('#<?php echo(my_pass_through(@$form_model::model()->get_id('x'))); ?>');
-            var y_input = $('#<?php echo(my_pass_through(@$form_model::model()->get_id('y'))); ?>');
+            var photos_input = $('#<?php echo(my_pass_through(@$form_new_point_model::model()->get_id('photos'))); ?>');
+            var x_input = $('#<?php echo(my_pass_through(@$form_new_point_model::model()->get_id('x'))); ?>');
+            var y_input = $('#<?php echo(my_pass_through(@$form_new_point_model::model()->get_id('y'))); ?>');
             var delete_existing_photo_checkbox_selector = 'form#' + form_id + ' .delete_existing_photo_checkbox';
             var add_new_point_form_photos_selector = '#add_new_point_form_photos';
             
@@ -272,7 +271,7 @@ $form_model = components\Map::get_form_model('new_point');
         })();
         
         // Можно обратиться к объекту двумя сособами, через явно указанное имя и через генератор имени (применяется в моделях и т.д.)
-        my_new_point = my_<?php echo($form_model::FORM_NAME); ?>_object;
+        my_new_point = my_<?php echo($form_new_point_model::FORM_NAME); ?>_object;
         my_new_point.init();
     });
 </script>
