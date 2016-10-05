@@ -270,7 +270,7 @@ $form_new_point_model = components\Map::get_form_model('new_point');
             return interface;
         })();
         
-        // Можно обратиться к объекту двумя сособами, через явно указанное имя и через генератор имени (применяется в моделях и т.д.)
+        // Можно обратиться к объекту двумя способами - через явно указанное имя или через генератор имени (применяется в моделях и т.д.)
         my_new_point = my_<?php echo($form_new_point_model::FORM_NAME); ?>_object;
         my_new_point.init();
     });
